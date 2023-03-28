@@ -30,24 +30,28 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ### First commit
 
-![Captura01](https://github.com/LautiRad/rather-labs-challenge/tree/main/public/Project/Captura01.png "Captura01")
-![Captura02](https://github.com/LautiRad/rather-labs-challenge/tree/main/public/Project/Captura02.png "Captura02")
-![Captura03](https://github.com/LautiRad/rather-labs-challenge/tree/main/public/Project/Captura03.png "Captura03")
+![Captura01](https://raw.githubusercontent.com/LautiRad/rather-labs-challenge/tree/main/public/Project/Captura01.png "Captura01")
+![Captura02](https://raw.githubusercontent.com/LautiRad/rather-labs-challenge/tree/main/public/Project/Captura02.png "Captura02")
+![Captura03](https://raw.githubusercontent.com/LautiRad/rather-labs-challenge/tree/main/public/Project/Captura03.png "Captura03")
 
 ### Second commit
 
-![Captura04](https://github.com/LautiRad/rather-labs-challenge/tree/main/public/Project/Captura04.png "Captura04")
-![Captura05](https://github.com/LautiRad/rather-labs-challenge/tree/main/public/Project/Captura05.png "Captura05")
+![Captura04](https://raw.githubusercontent.com/LautiRad/rather-labs-challenge/tree/main/public/Project/Captura04.png "Captura04")
+![Captura05](https://raw.githubusercontent.com/LautiRad/rather-labs-challenge/tree/main/public/Project/Captura05.png "Captura05")
 
 ### Third commit
 
-![Captura06](https://github.com/LautiRad/rather-labs-challenge/tree/main/public/Project/Captura06.png "Captura06")
+![Captura06](https://raw.githubusercontent.com/LautiRad/rather-labs-challenge/tree/main/public/Project/Captura06.png "Captura06")
 
 ### Fourth commit
 
-![Captura07](https://github.com/LautiRad/rather-labs-challenge/tree/main/public/Project/Captura07.png "Captura07")
+![Captura07](https://raw.githubusercontent.com/LautiRad/rather-labs-challenge/tree/main/public/Project/Captura07.png "Captura07")
 
 ### Fifth commit
 
-![Captura08](https://github.com/LautiRad/rather-labs-challenge/tree/main/public/Project/Captura08.png "Captura08")
-![Captura09](https://github.com/LautiRad/rather-labs-challenge/tree/main/public/Project/Captura09.png "Captura09")
+![Captura08](https://raw.githubusercontent.com/LautiRad/rather-labs-challenge/tree/main/public/Project/Captura08.png "Captura08")
+![Captura09](https://raw.githubusercontent.com/LautiRad/rather-labs-challenge/tree/main/public/Project/Captura09.png "Captura09")
+
+### Sixth commit
+
+![Captura10](https://raw.githubusercontent.com/LautiRad/rather-labs-challenge/main/public/Project/Captura10.png "Captura10")

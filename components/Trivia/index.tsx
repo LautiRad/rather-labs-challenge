@@ -3,6 +3,8 @@ import sampleSurvey from "./survey-sample.json";
 import { Button, Card } from "antd";
 import Image from "next/image";
 import Finish from "../../public/Assets/finish.jpeg";
+import Result from "../Result";
+import styles from "@/styles/Home.module.css";
 
 const { Meta } = Card;
 
@@ -15,6 +17,7 @@ const Trivia = () => {
   const [selectedOptions, setSelectedOptions] = useState(
     Array(survey.questions.length).fill(null)
   );
+  const [answers, setAnswers] = useState<{ [key: number]: number | null }>({});
 
   useEffect(() => {
     if (
@@ -34,12 +37,15 @@ const Trivia = () => {
   };
 
   const handleOptionClick = (optionIndex: number) => {
-    setSelectedOptionIndex(optionIndex);
-    setSelectedOptions(
-      selectedOptions.map((value, index) =>
-        index === currentQuestionIndex ? optionIndex : value
-      )
-    );
+    setSelectedOptions((prevSelectedOptions) => {
+      const newSelectedOptions = [...prevSelectedOptions];
+      newSelectedOptions[currentQuestionIndex] = optionIndex;
+      return newSelectedOptions;
+    });
+    setAnswers((prevAnswers) => ({
+      ...prevAnswers,
+      [currentQuestionIndex]: optionIndex,
+    }));
     setTimeout(() => setCurrentQuestionIndex(currentQuestionIndex + 1), 500);
   };
 
@@ -111,8 +117,15 @@ const Trivia = () => {
           style={{ width: 240 }}
           cover={<Image alt="Done" src={Finish} width="240" height="200" />}
         >
-          <Meta title="Trivia Complete" />
+          <div>
+            <Meta title="Trivia Complete" />
+          </div>
         </Card>
+      )}
+      {currentQuestionIndex === survey.questions.length && (
+        <div className={styles.resultados}>
+          <Result survey={survey} answers={answers} />
+        </div>
       )}
     </div>
   );
