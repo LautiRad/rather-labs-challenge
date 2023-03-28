@@ -1,0 +1,54 @@
+{
+    "title":"Sample Survey",
+   "image":"https://media.istockphoto.com/vectors/quiz-neon-text-banner-on-brick-wall-questions-team-game-quiz-night-vector-id1223692043?k=6&m=1223692043&s=612x612&w=0&h=Z5htM-HYfENFprQf3jHEWpSNJpf3ZwQiM_q739mCcNE=",
+   "questions":[
+      {
+         "text":"Question1",
+         "image":"https://interactive-examples.mdn.mozilla.net/media/cc0-images/grapefruit-slice-332-332.jpg",
+         "lifetimeSeconds":10,
+         "options":[
+            {
+               "text":"Opt1"
+            },
+            {
+               "text":"Opt2"
+            },
+            {
+               "text":"Opt"
+            }
+         ]
+      },
+      {
+         "text":"Question2",
+         "image":"https://filedn.com/ltOdFv1aqz1YIFhf4gTY8D7/ingus-info/BLOGS/Photography-stocks3/stock-photography-slider.jpg",
+         "lifetimeSeconds":5,
+         "options":[
+            {
+               "text":"Opt1"
+            },
+            {
+               "text":"Opt2"
+            },
+            {
+               "text":"Opt"
+            }
+         ]
+      },
+      {
+        "text":"Pregunta 2",
+        "image":"https://filedn.com/ltOdFv1aqz1YIFhf4gTY8D7/ingus-info/BLOGS/Photography-stocks3/stock-photography-slider.jpg",
+        "lifetimeSeconds":5,
+        "options":[
+            {
+               "text":"Opt1"
+            },
+            {
+               "text":"Opt2"
+            },
+            {
+               "text":"Opt"
+            }
+         ]
+     }
+   ]
+}

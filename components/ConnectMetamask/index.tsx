@@ -68,13 +68,17 @@ const MetamaskButton = () => {
     <div>
       {account ? (
         <div>
-          <Button onClick={handleDisconnect}>Disconnect</Button>
+          <Button type="primary" onClick={handleDisconnect}>
+            Disconnect
+          </Button>
           <div>
             <ShowBalance web3={web3} account={account} />
           </div>
         </div>
       ) : (
-        <Button onClick={handleConnect}>Connect Wallet</Button>
+        <Button type="primary" onClick={handleConnect}>
+          Connect Wallet
+        </Button>
       )}
     </div>
   );
