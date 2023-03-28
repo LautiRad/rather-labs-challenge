@@ -42,3 +42,12 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ### Third commit
 
 ![Captura06](https://github.com/LautiRad/rather-labs-challenge/tree/main/public/Project/Captura06.png "Captura06")
+
+### Fourth commit
+
+![Captura07](https://github.com/LautiRad/rather-labs-challenge/tree/main/public/Project/Captura07.png "Captura07")
+
+### Fifth commit
+
+![Captura08](https://github.com/LautiRad/rather-labs-challenge/tree/main/public/Project/Captura08.png "Captura08")
+![Captura09](https://github.com/LautiRad/rather-labs-challenge/tree/main/public/Project/Captura09.png "Captura09")

@@ -1,6 +1,11 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+module.exports = {
   reactStrictMode: true,
-}
-
-module.exports = nextConfig
+  images: {
+    domains: [
+      "media.istockphoto.com",
+      "interactive-examples.mdn.mozilla.net",
+      "filedn.com",
+    ],
+  },
+};
