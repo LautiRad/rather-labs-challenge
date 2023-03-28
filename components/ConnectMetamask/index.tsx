@@ -21,7 +21,20 @@ const MetamaskButton = () => {
         await (window as CustomWindow).ethereum.request({
           method: "eth_requestAccounts",
         });
-
+        // Checkeo si el usuario esta en Goerli
+        const chainId = await newWeb3.eth.getChainId();
+        if (chainId !== 5) {
+          const networkName = chainId === 1 ? "Goerli Testnet" : "Mainnet";
+          const result = window.confirm(
+            `Please switch to the ${networkName} network to continue. | Por Favor cambia a la red ${networkName} para continuar.`
+          );
+          if (result) {
+            await (window as CustomWindow).ethereum.request({
+              method: "wallet_switchEthereumChain",
+              params: [{ chainId: "0x5" }],
+            });
+          }
+        }
         setWeb3(newWeb3);
         const accounts = await newWeb3.eth.getAccounts();
         setAccount(accounts[0]);
