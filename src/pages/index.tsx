@@ -5,7 +5,7 @@ import ConnectMetamask from "../../components/ConnectMetamask";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home() {
+export default function Home({}) {
   return (
     <>
       <Head>
@@ -35,7 +35,6 @@ export default function Home() {
             </a>
           </div>
         </div>
-
         <div className={styles.center}>
           <ConnectMetamask />
         </div>

@@ -28,13 +28,17 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Project Working
 
-# First commit
+### First commit
 
-<img src="https://github.com/LautiRad/rather-labs-challenge/tree/main/public/Project/Captura01.png" alt="Connect Wallet" height="150"/>
-<img src="https://github.com/LautiRad/rather-labs-challenge/tree/main/public/Project/Captura02.png" alt="Signature" height="150"/>
-<img src="https://github.com/LautiRad/rather-labs-challenge/tree/main/public/Project/Captura03.png" alt="Disconnect" height="150"/>
+![Captura01](https://github.com/LautiRad/rather-labs-challenge/tree/main/public/Project/Captura01.png "Captura01")
+![Captura02](https://github.com/LautiRad/rather-labs-challenge/tree/main/public/Project/Captura02.png "Captura02")
+![Captura03](https://github.com/LautiRad/rather-labs-challenge/tree/main/public/Project/Captura03.png "Captura03")
 
-# Second commit
+### Second commit
 
-<img src="https://github.com/LautiRad/rather-labs-challenge/tree/main/public/Project/Captura04.png" alt="Alert" height="150"/>
-<img src="https://github.com/LautiRad/rather-labs-challenge/tree/main/public/Project/Captura05.png" alt="Goerli Switch" height="150"/>
+![Captura04](https://github.com/LautiRad/rather-labs-challenge/tree/main/public/Project/Captura04.png "Captura04")
+![Captura05](https://github.com/LautiRad/rather-labs-challenge/tree/main/public/Project/Captura05.png "Captura05")
+
+### Third commit
+
+![Captura06](https://github.com/LautiRad/rather-labs-challenge/tree/main/public/Project/Captura06.png "Captura06")

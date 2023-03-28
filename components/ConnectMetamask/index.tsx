@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Button } from "antd";
 import Web3 from "web3";
-
+import ShowBalance from "../QuizBalance/ShowBalance";
 interface CustomWindow extends Window {
   ethereum?: any;
 }
@@ -67,7 +67,12 @@ const MetamaskButton = () => {
   return (
     <div>
       {account ? (
-        <Button onClick={handleDisconnect}>Disconnect</Button>
+        <div>
+          <Button onClick={handleDisconnect}>Disconnect</Button>
+          <div>
+            <ShowBalance web3={web3} account={account} />
+          </div>
+        </div>
       ) : (
         <Button onClick={handleConnect}>Connect Wallet</Button>
       )}
