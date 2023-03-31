@@ -1,12 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { Button } from "antd";
 import Web3 from "web3";
-import ShowBalance from "../QuizBalance/ShowBalance";
+import Trivia from "../Trivia";
+import { Inter } from "next/font/google";
+import styles from "@/styles/Home.module.css";
+import QuizBalance from "../QuizBalance";
+
+const inter = Inter({ subsets: ["latin"] });
 interface CustomWindow extends Window {
   ethereum?: any;
 }
 
-const MetamaskButton = () => {
+const ConnectMetamask = () => {
   const [web3, setWeb3] = useState<Web3 | null>(null);
   const [account, setAccount] = useState<string | null>(null);
 
@@ -21,7 +26,6 @@ const MetamaskButton = () => {
         await (window as CustomWindow).ethereum.request({
           method: "eth_requestAccounts",
         });
-        // Checkeo si el usuario esta en Goerli
         const chainId = await newWeb3.eth.getChainId();
         if (chainId !== 5) {
           const networkName = chainId === 1 ? "Goerli Testnet" : "Mainnet";
@@ -68,20 +72,30 @@ const MetamaskButton = () => {
     <div>
       {account ? (
         <div>
-          <Button type="primary" onClick={handleDisconnect}>
-            Disconnect
-          </Button>
-          <div>
-            <ShowBalance web3={web3} account={account} />
+          <div className={styles.center}>
+            <Button type="primary" onClick={handleDisconnect}>
+              Disconnect
+            </Button>
           </div>
+          <div className={styles.center}>
+            <QuizBalance web3={web3} account={account} />
+          </div>
+          <Trivia />
         </div>
       ) : (
-        <Button type="primary" onClick={handleConnect}>
-          Connect Wallet
-        </Button>
+        <div>
+          <div className={styles.center}>
+            <Button type="primary" onClick={handleConnect}>
+              Connect Wallet
+            </Button>
+          </div>
+          <h1 className={inter.className}>
+            Connect your Metamask Wallet to start
+          </h1>
+        </div>
       )}
     </div>
   );
 };
 
-export default MetamaskButton;
+export default ConnectMetamask;

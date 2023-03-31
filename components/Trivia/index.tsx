@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import sampleSurvey from "./survey-sample.json";
 import { Button, Card } from "antd";
 import Image from "next/image";
 import Finish from "../../public/Assets/finish.jpeg";
 import Result from "../Result";
 import styles from "@/styles/Home.module.css";
+import { MetamaskContext } from "../../context/MetamaskContext";
 
 const { Meta } = Card;
 
@@ -17,8 +18,11 @@ const Trivia = () => {
   const [selectedOptions, setSelectedOptions] = useState(
     Array(survey.questions.length).fill(null)
   );
-  const [answers, setAnswers] = useState<{ [key: number]: number | null }>({});
+  const [answers, setAnswers] = useState<Array<number | null>>(
+    Array(sampleSurvey.questions.length).fill(null)
+  );
 
+  const { web3, account } = useContext(MetamaskContext);
   useEffect(() => {
     if (
       survey.questions[currentQuestionIndex] &&
@@ -42,10 +46,12 @@ const Trivia = () => {
       newSelectedOptions[currentQuestionIndex] = optionIndex;
       return newSelectedOptions;
     });
-    setAnswers((prevAnswers) => ({
-      ...prevAnswers,
-      [currentQuestionIndex]: optionIndex,
-    }));
+    setAnswers((prevAnswers) => {
+      const newAnswers = [...prevAnswers];
+      newAnswers[currentQuestionIndex] = optionIndex;
+      return newAnswers;
+    });
+
     setTimeout(() => setCurrentQuestionIndex(currentQuestionIndex + 1), 500);
   };
 
@@ -67,9 +73,11 @@ const Trivia = () => {
           <Meta
             title={survey.title}
             description={
-              <Button type="primary" onClick={handleStartTrivia}>
-                Start Trivia
-              </Button>
+              <div>
+                <Button type="primary" onClick={handleStartTrivia}>
+                  Start Trivia
+                </Button>
+              </div>
             }
           />
         </Card>

@@ -1,1 +1,1 @@
-export { default as QUIZ_ABI } from './QuizTokenABI.json';
+export { default as QUIZ_ABI } from "./QuizTokenABI.json";

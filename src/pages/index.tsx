@@ -2,11 +2,10 @@ import Head from "next/head";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import ConnectMetamask from "../../components/ConnectMetamask";
-import Trivia from "../../components/Trivia";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home({}) {
+export default function Home() {
   return (
     <>
       <Head>
@@ -38,9 +37,6 @@ export default function Home({}) {
         </div>
         <div className={styles.center}>
           <ConnectMetamask />
-        </div>
-        <div className={styles.center}>
-          <Trivia />
         </div>
         <div className={styles.grid}>
           <a

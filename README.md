@@ -26,32 +26,25 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - [Ant Design Documentation](https://ant.design/) - Ant Design.
 - [MobX State Tree Documentation](https://mobx-state-tree.js.org/intro/welcome) - MobX State Tree.
 
-## Project Working
+## Project
 
-### First commit
-
-![Captura01](https://raw.githubusercontent.com/LautiRad/rather-labs-challenge/tree/main/public/Project/Captura01.png "Captura01")
-![Captura02](https://raw.githubusercontent.com/LautiRad/rather-labs-challenge/tree/main/public/Project/Captura02.png "Captura02")
-![Captura03](https://raw.githubusercontent.com/LautiRad/rather-labs-challenge/tree/main/public/Project/Captura03.png "Captura03")
-
-### Second commit
-
-![Captura04](https://raw.githubusercontent.com/LautiRad/rather-labs-challenge/tree/main/public/Project/Captura04.png "Captura04")
-![Captura05](https://raw.githubusercontent.com/LautiRad/rather-labs-challenge/tree/main/public/Project/Captura05.png "Captura05")
-
-### Third commit
-
-![Captura06](https://raw.githubusercontent.com/LautiRad/rather-labs-challenge/tree/main/public/Project/Captura06.png "Captura06")
-
-### Fourth commit
-
-![Captura07](https://raw.githubusercontent.com/LautiRad/rather-labs-challenge/tree/main/public/Project/Captura07.png "Captura07")
-
-### Fifth commit
-
-![Captura08](https://raw.githubusercontent.com/LautiRad/rather-labs-challenge/tree/main/public/Project/Captura08.png "Captura08")
-![Captura09](https://raw.githubusercontent.com/LautiRad/rather-labs-challenge/tree/main/public/Project/Captura09.png "Captura09")
-
-### Sixth commit
-
-![Captura10](https://raw.githubusercontent.com/LautiRad/rather-labs-challenge/main/public/Project/Captura10.png "Captura10")
+<p align="center">
+<img align="center" width="500px" src="./public/Assets/01.png"/>
+<img align="center" width="200px" src="./public/Assets/02.png"/>
+</p>
+<p align="center">
+<img align="center" width="400px" src="./public/Assets/03.png"/>
+<img align="center" width="400px" src="./public/Assets/04.png" />
+</p>
+<p align="center">
+<img align="center" width="400px" src="./public/Assets/05.png"/>
+<img align="center" width="400px" src="./public/Assets/06.png" />
+</p>
+<p align="center">
+<img align="center" width="400px" src="./public/Assets/07.png"/>
+<img align="center" width="300px" src="./public/Assets/08.png" />
+</p>
+<p align="center">
+<img align="center" width="400px" src="./public/Assets/09.png"/>
+<img align="center" width="400px" src="./public/Assets/10.png" />
+</p>
